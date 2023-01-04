@@ -28,9 +28,6 @@ export default function Posts(){
 
     },[]);
 
-   
-    const blogCollectionRef=collection(db,'blog');
-
     return (
         <div>
             
