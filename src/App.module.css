@@ -1,0 +1,16 @@
+.app ul{
+    list-style: none;
+    display: flex;
+
+}
+.app li{
+    margin: 10px 15px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.app a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.7rem;
+
+}

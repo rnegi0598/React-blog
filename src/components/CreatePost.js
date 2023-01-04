@@ -2,6 +2,7 @@
 import {collection,addDoc} from 'firebase/firestore';
 import {useState} from 'react';
 import {db} from '../firebase-config';
+import styles from './createPost.module.css';
 export default function CreatePost(){
     const [title,setTitle]=useState('');
     const [author,setAuthor]=useState('');
@@ -20,7 +21,8 @@ export default function CreatePost(){
             setTitle('');
             setAuthor('');
             setContent('');
-            console.log('data submitted sucessfully')
+            console.log('data submitted sucessfully');
+            
         }
       
         
@@ -28,17 +30,18 @@ export default function CreatePost(){
 
     return (
         <div>
-            <form onSubmit={submitHandler}>
-                <label>
-                    Title
+
+            <form onSubmit={submitHandler} className={styles.form}>
+                <label className={styles.label}>
+                    <p>Blog Title </p>
                     <input type="text" onChange={e=>setTitle(e.target.value)} value={title} />
                 </label>
-                <label>
-                    Author
+                <label className={styles.label}>
+                    <p>Blog Author </p>
                     <input type="text" onChange={e=>setAuthor(e.target.value)} value={author}/>
                 </label>
-                <label>
-                    Content
+                <label className={styles.label}>
+                    <p>Blog Content </p>
                     <textarea  onChange={e=>setContent(e.target.value)} value={content} />
                 </label>
                 <button>submit</button>

@@ -1,0 +1,29 @@
+.posts{
+    margin: 20px;
+}
+.posts header{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.post{
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.post p{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.post p span{
+    font-weight: 900;
+}
+.post .mainSpan{
+    margin-right: 10px;
+}
+.mainSpan span{
+    font-weight: 900;
+}
